@@ -1,0 +1,61 @@
+/*  ORDEN DE JERARQUIA 
+    ###
+    ...
+*/
+
+body{
+    background-color: blueviolet;
+}
+
+/* .logo con el punto selecciono la clase*/
+.logo{
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.cards{
+    border: 2px solid black;
+    /* con fit- content el contenido de "cards" se ajusta automaticamente hasta su ancho propio del contenido.*/
+    width: fit-content;
+    /* con padding damos espacio a los costados, hacia adentro, los valores se colocan en sentido horario del reloj*/
+    padding: 1em;
+    /* con border-radius redondeo las esquinas del cuadro*/
+    border-radius: 20px;
+    /* la propiedad "transition" da el tiempo de cambio en 1s*/
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    /* con la propiedad "gap" da un pequeño espacio entre los elementos*/
+    gap: 1em;
+    /* con la propiedad "align-items" alineo los elementos, en este caso center, */
+    align-items: center;
+}
+
+/* el pseudo selector :hover cambiara de color el background al pasar el mouse*/
+.cards:hover{
+    background-color: aqua;
+}
+
+#principal{
+    font-size: 70px;
+    border: 2px solid black;
+    /* viewport width*/
+    width: 60vw;
+    margin: auto;
+    padding: 1em;
+}
+#cards-container{
+    background-color: chartreuse;
+    width: 85%;
+    margin: auto;
+    margin-top: 5em;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1em;
+    /* cambia el orden del contenido a "flex"*/
+    display: flex;
+    /*flex-direction: row, orden todo hacia la derecha*/
+    flex-direction: row;
+    /* "flex-start" todo los elementos pegados hacia la izquierda del box, "flex-end" hacia la derecha del box, "space-around" cada elemento tendra alrededor la misma distancia*/
+    justify-content: space-around;
+}

@@ -1,0 +1,197 @@
+/* Reset.css */
+/* Basado en la versión de Eric Meyer y Normalize.css */
+
+/* Box-sizing reset para evitar problemas de dimensionamiento */
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  /* Reset de márgenes y padding */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  li,
+  figure,
+  figcaption,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* List-style reset para listas */
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  /* Formato predeterminado para el cuerpo del documento */
+  body {
+    line-height: 1.6;
+  }
+  
+  /* Eliminar decoración de enlaces predeterminada */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Establecer el tamaño de la fuente en 100% para una fácil escalabilidad */
+  html {
+    font-size: 100%;
+  }
+  
+  /* Normalizar la presentación del texto */
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-family: sans-serif;
+  }
+  
+  /* Restablecer el tamaño del texto de la entrada y el área de texto a "normal" */
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 100%;
+  }
+  
+  /* Restablecer estilos para los elementos incorporados */
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Restablecer estilos para la tabla */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Restablecer estilos para formularios y controles */
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+  }
+  
+  /* Corregir el estilo de salida de Firefox */
+  button,
+  select {
+    text-transform: none;
+  }
+  
+  /* Restablecer el estilo de los botones en IE */
+  button,
+  html [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /* Restablecer el estilo de los botones en Safari 4+ */
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+  }
+  
+  /* Restablecer el estilo de los elementos que pueden ser clicados en IE */
+  a,
+  area,
+  button,
+  input,
+  label,
+  select,
+  summary,
+  textarea {
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+  
+  /* Restablecer estilos para la interacción con el usuario */
+  [hidden] {
+    display: none;
+  }
+  
+  /* Restablecer estilos para la impresión */
+  @media print {
+    * {
+      color: black !important;
+      text-shadow: none !important;
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+  
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+      content: "";
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    thead {
+      display: table-header-group;
+    }
+  
+    img,
+    tr {
+      page-break-inside: avoid;
+    }
+  
+    img {
+      max-width: 100% !important;
+    }
+  
+    h2,
+    h3,
+    p {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  
