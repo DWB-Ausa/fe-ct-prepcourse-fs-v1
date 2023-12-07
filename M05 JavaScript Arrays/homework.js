@@ -159,7 +159,7 @@ function todosIguales(array) {
    // Caso contrario retornar false.
    // Tu código:
 
-   //comparo los siguiente numero con el primero
+   //comparo los siguiente numeros con el primero
    for (var i = 1; i < array.length; i++){
       if (array[i] === array[0]){
          return true;
