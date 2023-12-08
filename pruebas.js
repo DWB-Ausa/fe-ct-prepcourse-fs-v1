@@ -58,11 +58,11 @@ const numeroAlReves = numeroAString.split('').reverse().join('');
 
 if (numeroAlReves === numeroAString) {
     console.log("Es capicua");
-/*     return "Es capicua"; */
+    /*     return "Es capicua"; */
 }
-else{
+else {
     console.log("No es capicua");
-  /*   return "No es capicua"; */
+    /*   return "No es capicua"; */
 }
 
 ////////////////////////////////////////////////
@@ -71,16 +71,51 @@ let palabravieja = "abeces";
 
 let palabraNueva = '';
 
-   for (let i = 0; i < palabravieja.length; i++) {
+for (let i = 0; i < palabravieja.length; i++) {
 
     const letraTemp = palabravieja[i];
 
-      if (letraTemp === "a" || letraTemp === "b"|| letraTemp === "c") {
-         continue;
-      }
-      else{
-         palabraNueva += letraTemp;
-      }     
-   }
-   console.log(palabraNueva);
-   /* return palabraNueva; */
+    if (letraTemp === "a" || letraTemp === "b" || letraTemp === "c") {
+        continue;
+    }
+    else {
+        palabraNueva += letraTemp;
+    }
+}
+/* console.log(palabraNueva); */
+
+/////////////////////////////////////
+const strings = ['hola', 'cesar', 'como te va', 'estas']
+
+let stringLargo = '';
+
+for (let i = 0; i < strings.length; i++) {
+    if (stringLargo.length < strings[i].length) {
+        stringLargo = strings[i];
+    }
+}
+
+console.log(stringLargo);
+
+///////////////////////////////////////////////
+
+var amigos = [{ nombre: 'toni', edad: 33 }, { nombre: 'Emi', edad: 25 }];
+
+const amigoEncontrado = amigos.find(amigos => amigos.nombre === 'toni');
+
+console.log(amigoEncontrado);
+
+/////////////////////////////
+
+var productos = [{ name: 'TV LCD', price: 100 }, { name: 'Computadora', price: 500 }];
+
+function pluck(productos, propiedad) {
+
+    const arrayDevuelto = productos.map(elemento =>
+        elemento[propiedad]);
+
+    return arrayDevuelto;
+}
+
+//////////////////////////////////////////
+{ amigos: [{ nombre: 'toni', edad: 33}, { nombre: 'Emi', edad: 25}] }

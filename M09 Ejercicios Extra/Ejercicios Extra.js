@@ -124,7 +124,6 @@ function capicua(numero) {
       return "Es capicua";
    }
    else {
-      console.log("No es capicua");
       return "No es capicua";
    }
 }
